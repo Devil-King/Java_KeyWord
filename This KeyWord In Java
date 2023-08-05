@@ -1,0 +1,52 @@
+//this keyword
+//1.
+public class Main
+{
+    void Show(){
+        System.out.println(this);
+    }
+	public static void main(String[] args) {
+       Main r = new Main();
+	System.out.println(r);
+	r.Show();
+	}
+}
+//Output:
+//Main@5fdef03a
+//Main@5fdef03a
+
+//2.
+class A{
+int a;     //instance variable in java 
+          //A variable declared inside the class but outside the body of the method, is called an instance variable.
+A(int a){
+this.a = a;    
+}
+void show(){
+System.out.println(a);
+}
+public static void main(String[] args){
+A r= new A(100);
+r.show();
+}}
+
+//Output: 100
+//Without this keyword default value of 'a' is print, means '0' is print.
+
+//3. 
+class Main{
+    Main(){   //default constructor
+    System.out.print(" Learn Coding ");    
+    }
+    Main(int a){      //user defined constructor
+    this();
+    System.out.print(a);
+    }
+    public static void main(String []args){
+    Main obj = new Main(100);    
+    
+    }
+}
+
+//Output: Learn Coding 100
+//Without this keyword only print '100' 
