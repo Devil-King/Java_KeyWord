@@ -50,3 +50,21 @@ class Main{
 
 //Output: Learn Coding 100
 //Without this keyword only print '100' 
+
+//4.
+class Main{
+    Main(){
+    this(10);   
+    }
+    Main(int a){
+    
+    System.out.print(a);
+    }
+    public static void main(String []args){
+    Main obj = new Main();    
+    
+    }
+}
+
+//Output: 10
+//https://youtu.be/zQv8rD_w5HI
